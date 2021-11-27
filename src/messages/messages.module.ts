@@ -5,9 +5,11 @@ import { MessagesService } from './messages.service';
 
 @Module({
   controllers: [MessagesController],
+
+  // things that can be used as dependencies for other classes
   providers: [
     MessagesService,
     MessagesRepository
   ]
 })
-export class MessagesModule {}
+export class MessagesModule { }
